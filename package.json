@@ -1,7 +1,7 @@
 {
   "escapedName": "reactorage",
   "name": "reactorage",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "simple synch store for react and react-native",
   "main": "lib/index.js",
   "main:next": "lib/index.js",
@@ -49,8 +49,7 @@
     "type": "git",
     "url": "http://sowlutions-git/wassim.alsabbagh/reactorage"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "ava": {
     "files": [
       "test/ava/*.js"
@@ -63,7 +62,10 @@
     "failWithoutAssertions": true,
     "tap": false,
     "powerAssert": true,
-    "require": ["babel-register", "babel-polyfill"],
+    "require": [
+      "babel-register",
+      "babel-polyfill"
+    ],
     "babel": "inherit"
   }
 }
