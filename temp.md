@@ -118,6 +118,8 @@ _r.is.not('user.name', 'empty')// of may be _r.not(... ) .. without is.not
 ```javascript
 // which means sync now// force save immediately
 //  to storage and don't wait debounce time(react native stuff)
+_r.sync().then(success => console.log(success))
+// => true
 ```
 ### async
 ```javascript
@@ -128,18 +130,7 @@ _r.is.not('user.name', 'empty')// of may be _r.not(... ) .. without is.not
   // all other get apis above are valid here
 
   _r.async.set('user').then(success => console.log(success))
-  // =>
-```
-### async
-```javascript
-// conatines all the methods above..
-//  works async instead.. return promise that returns only
-//  after react save to storage done
-  _r.async.get('user').then(user => console.log(user))
-  // all other get apis above are valid here
-
-  _r.async.set('user').then(success => console.log(success))
-  // =>
+  // => true
 ```
 
 ### specific for react-native
