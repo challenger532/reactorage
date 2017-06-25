@@ -116,7 +116,7 @@ _r.is.not('user.name', 'empty')// of may be _r.not(... ) .. without is.not
 
 ### sync
 ```javascript
-// which means sync now// force save immediately
+// which means sync now// force save immediatele
 //  to storage and don't wait debounce time(react native stuff)
 _r.sync().then(success => console.log(success))
 // => true
